@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Light'), local('Montserrat-Light'), url('../fonts/montserratlight.woff2') format('woff2'), url('../fonts/montserratlight.woff') format('woff'), url('../fonts/montserratlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Regular'), local('Raleway-Regular'), url('../fonts/ralewayregular.woff2') format('woff2'), url('../fonts/ralewayregular.woff') format('woff'), url('../fonts/ralewayregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Medium'), local('Raleway-Medium'), url('../fonts/ralewaymedium.woff2') format('woff2'), url('../fonts/ralewaymedium.woff') format('woff'), url('../fonts/ralewaymedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url('../fonts/ralewayextrabold.woff2') format('woff2'), url('../fonts/ralewayextrabold.woff') format('woff'), url('../fonts/ralewayextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.head {
+    width: 100%;
+    min-width: 1230px;
+    min-height: 1024px;
+    background-color: #211b19;
+    background-image: url("../img/head-bg.jpg");
+    background-size: cover;
+}
+
+.header-content-navigation{
+    margin: 0 auto;
+    width: 1230px;
+    padding-top: 40px;
+    display: flex;
+    min-height: 56px;
+    color: #fff;
+}
+
+.logo-block,
+.header-content-navigation ul li,
+.nav-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.logo-block{
+    color: #fff;
+    text-decoration: none;
+    font-size: 34px;
+    font-family: "Raleway Regular", "Raleway", sans-serif;
+    margin-right: 220px;
+}
+
+.header-content-navigation ul{
+    display: flex;
+    font-family: "Montserrat Light" ,"Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.header-content-navigation ul li{
+    margin-right: 30px;
+}
+
+.header-content-navigation ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-content-navigation ul li a:hover{
+    color: #c7b299;
+}
+
+.header-content-navigation ul li a:active{
+    color: #d9cab8;
+}
+
+.nav-buttons img{
+    margin-left: 30px;
+}
+
+.slider{
+    min-height: 928px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.slider-left,
+.slider-right{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+
+.slider-content :nth-child(1){
+    order: 2;
+}
+
+.slider-content :nth-child(2){
+    order: 1;
+}
+
+.slider-content :nth-child(3){
+    order: 3;
+}
+
+.slider-content :nth-child(4){
+    order: 4;
+}
+
+.slider-content h4 {
+    font-size: 36px;
+    font-family: "Raleway Medium", "Raleway", sans-serif;
+    font-weight: 300;
+}
+
+.slider-content h3 {
+    font-family: "Raleway ExtraBold", "Raleway", sans-serif;
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.slider-content p {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    width: 580px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.started {
+    width: 170px;
+    height: 53px;
+}
+
+.started button{
+    width: 170px;
+    height: 50px;
+    background-color: #998675;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Raleway ExtraBold", "Raleway", sans-serif;
+    font-weight: bold;
+    border-bottom: 3px;
+    box-shadow: 0 3px #736357;
+    cursor: pointer;
+}
+
+.started button:hover{
+    background-color: #ac9785;
+}
+
+.started button:active{
+    background-color: #736357;
+    margin-top: 3px;
+    box-shadow: none;
+}
+
+.pagination{
+    width: 100%;
+    height: 95px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #939190;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.circle-active {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #d3c1ad;
+}
+
+.circle:hover{
+    background-color: transparent;
+    box-shadow: 0 0 0 2px #d3c1ad;
+}
