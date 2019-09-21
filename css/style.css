@@ -26,6 +26,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url('../fonts/ralewaysemibold.woff2') format('woff2'), url('../fonts/ralewaysemibold.woff') format('woff'), url('../fonts/ralewaysemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -164,7 +171,8 @@
     height: 53px;
 }
 
-.started button{
+.started button,
+.theme-info-button button{
     width: 170px;
     height: 50px;
     background-color: #998675;
@@ -181,11 +189,13 @@
     cursor: pointer;
 }
 
-.started button:hover{
+.started button:hover,
+.theme-info-button button:hover{
     background-color: #ac9785;
 }
 
-.started button:active{
+.started button:active,
+.theme-info-button button:active{
     background-color: #736357;
     margin-top: 3px;
     box-shadow: none;
@@ -221,4 +231,173 @@
 .circle:hover{
     background-color: transparent;
     box-shadow: 0 0 0 2px #d3c1ad;
+}
+
+.professions{
+    width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 0;
+}
+
+.profession {
+    width: 270px;
+    text-align: center;
+}
+
+.profession svg{
+    fill: #555;
+    margin-bottom: 20px;
+    height: 50px;
+}
+.profession:hover svg{
+    fill: #c7b299;
+}
+
+.profession h3 {
+    color: #555;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.profession:hover h3 {
+    color: #c7b299;
+}
+
+.profession p{
+    color: #8c8c8c;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin-bottom: 25px;
+    line-height: 1.714;
+}
+
+.profession hr{
+    width: 70px;
+    color: #f1eee9;
+    background-color:#f1eee9;
+    border: 0px none;
+    height:3px;
+    margin: 0 auto;
+}
+
+.profession:hover hr {
+    color: #c7b299;
+    background-color: #c7b299;
+}
+
+.ideas{
+    width: 100%;
+    min-width: 1230px;
+    background-color: #fbfaf8;
+}
+.ideas-content{
+    padding-top: 80px;
+    width: 1230px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ideas-content h2 {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.ideas-content p{
+    width: 760px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: #8c8c8c;
+    line-height: 1.75;
+    margin-bottom: 35px;
+}
+
+.ideas-img{
+    width: 100%;
+    min-height: 482px;
+    position: relative;
+}
+
+.left-idea{
+    position: absolute;
+    width: 770px;
+    height: 400px;
+    background-color: #392821;
+    background-image: url("../img/browser-left.jpg");
+    left:0;
+    bottom: 0;
+    z-index: 1;
+}
+.right-idea{
+    position: absolute;
+    width: 770px;
+    height: 400px;
+    background-color: #2f231d;
+    background-image: url("../img/browser-right.jpg");
+    right:0;
+    bottom: 0;
+    z-index: 2;
+}
+.center-idea{
+    position: absolute;
+    width: 770px;
+    height: 482px;
+    background-color: #231c1a;
+    background-image: url("../img/browser-center.jpg");
+    margin:auto;
+    left:0;
+    right:0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.theme-info{
+    width: 100%;
+    min-width: 1230px;
+    min-height: 150px;
+    background: #211b19;
+    background: linear-gradient(to right, #211b19, #4e3427);
+}
+
+.theme-info-content{
+    width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.theme-info-title{
+    width: 80%;
+}
+
+.theme-info-title h2{
+    font-size: 28px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.theme-info-title h2 span{
+    color: #c7b299;
+}
+
+.theme-info-title p{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #615855;
+    font-weight: 300;
+}
+
+.theme-info-button{
+    width: 20%;
 }
