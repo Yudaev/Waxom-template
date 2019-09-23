@@ -121,6 +121,45 @@
     fill: #736357;
 }
 
+form {
+    position: relative;
+    width: 60px;
+    height: 42px;
+}
+input[type="text"] {
+    height: 42px;
+    width: 0;
+    padding: 0 42px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: -10px;
+    z-index: 2;
+}
+input[type="text"]:focus {
+    width: 300px;
+    z-index: 1;
+    border-bottom: 2px solid #F9F0DA;
+    background-color: #555;
+    color: #fff;
+}
+.submit-button {
+    background: transparent url("../img/icon-search.svg") no-repeat;
+    border: none;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    cursor: pointer;
+    z-index: 1;
+    outline: none;
+}
+
 .slider{
     min-height: 928px;
     display: flex;
