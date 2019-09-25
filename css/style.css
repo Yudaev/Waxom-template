@@ -109,15 +109,22 @@
     cursor: pointer;
 }
 
-.nav-buttons button svg {
+.nav-buttons button svg,
+.logo-block svg {
     fill: #fff;
 }
 
-.nav-buttons button svg:hover {
+.nav-buttons button svg:hover,
+.logo-block:hover svg,
+.logo-block:hover{
+    color: #ac9785;
     fill: #ac9785;
 }
 
-.nav-buttons button svg:active {
+.nav-buttons button svg:active,
+.logo-block:active svg,
+.logo-block:active{
+    color: #736357;
     fill: #736357;
 }
 
