@@ -116,14 +116,16 @@
 
 .nav-buttons button svg:hover,
 .logo-block:hover svg,
-.logo-block:hover{
+.logo-block:hover,
+.switch:hover svg{
     color: #ac9785;
     fill: #ac9785;
 }
 
 .nav-buttons button svg:active,
 .logo-block:active svg,
-.logo-block:active{
+.logo-block:active,
+.switch:active svg{
     color: #736357;
     fill: #736357;
 }
@@ -174,12 +176,23 @@ input[type="text"]:focus {
     align-items: stretch;
 }
 
-.slider-left,
-.slider-right{
+.switch{
     width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.switch:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.switch:active{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.switch svg{
+    fill: #a2a19f;
 }
 
 .slider-content{
