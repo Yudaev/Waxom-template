@@ -360,9 +360,20 @@ input[type="text"]:focus {
     margin: 0 auto;
 }
 
-.profession:hover hr {
+.profession:hover:after {
     color: #c7b299;
     background-color: #c7b299;
+}
+
+.profession:after{
+    content: "";
+    display: block;
+    width: 70px;
+    color: #f1eee9;
+    background-color:#f1eee9;
+    border: 0px none;
+    height:3px;
+    margin: 0 auto;
 }
 
 .ideas{
