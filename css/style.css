@@ -670,7 +670,6 @@ input[type="text"]:focus {
 }
 
 .btn-link{
-    /*background: url("../img/link.svg") no-repeat;*/
     left: 145px;
 }
 
@@ -690,6 +689,5 @@ input[type="text"]:focus {
 }
 
 .btn-search{
-    /*background: url("../img/search.svg") no-repeat;*/
     left: 200px;
 }
