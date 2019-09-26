@@ -666,14 +666,30 @@ input[type="text"]:focus {
     top: 107px;
     outline: none;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .btn-link{
-    background: url("../img/link.svg") no-repeat;
+    /*background: url("../img/link.svg") no-repeat;*/
     left: 145px;
 }
 
+.btn-link svg,
+.btn-search svg{
+    fill: #fff;
+}
+
+.btn-link svg:hover,
+.btn-search svg:hover{
+    fill: #ac9785;
+}
+
+.btn-link svg:active,
+.btn-search svg:active{
+    fill: #736357;
+}
+
 .btn-search{
-    background: url("../img/search.svg") no-repeat;
+    /*background: url("../img/search.svg") no-repeat;*/
     left: 200px;
 }
