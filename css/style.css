@@ -226,12 +226,14 @@ input[type="text"]:focus {
     font-size: 36px;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
+    margin-bottom: 5px;
 }
 
 .slider-content h3 {
     font-family: "Raleway", sans-serif;
     font-size: 52px;
     font-weight: 800;
+    margin-bottom: 15px;
 }
 
 .slider-content p {
@@ -249,7 +251,7 @@ input[type="text"]:focus {
     height: 53px;
 }
 
-.slider-content p button,
+.slider-content button,
 .theme-info-content button,
 .load-more{
     width: 170px;
@@ -269,8 +271,8 @@ input[type="text"]:focus {
     position: absolute;
 }
 
-.slider-content p button{
-    bottom: -100px;
+.slider-content button{
+    bottom: 305px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -290,15 +292,15 @@ input[type="text"]:focus {
     right: 0;
 }
 
-.slider-content p button:hover,
+.slider-content button:hover,
 .theme-info-content button:hover,
 .load-more:hover{
     background-color: #ac9785;
 }
 
-.slider-content p button:active{
+.slider-content button:active{
     background-color: #736357;
-    bottom: -103px;
+    bottom: 302px;
     box-shadow: none;
 }
 
