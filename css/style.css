@@ -525,7 +525,6 @@ input[type="text"]:focus {
 
 .project-category,
 .active-category{
-    display: block;
     margin: 0 10px;
     text-decoration: none;
     padding: 6px 20px;
@@ -533,6 +532,8 @@ input[type="text"]:focus {
     font-weight: 300;
     border-radius: 3px;
     font-size: 14px;
+    outline: none;
+    background: #fff;
 }
 
 .project-category{
