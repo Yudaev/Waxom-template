@@ -451,36 +451,9 @@ input[type="text"]:focus {
     width: 100%;
     min-height: 482px;
     position: relative;
-}
-
-.left-idea{
-    position: absolute;
-    width: 770px;
-    height: 400px;
-    background: #392821 url("../img/browser-left.jpg");
-    left:0;
-    bottom: 0;
-    z-index: 1;
-}
-.right-idea{
-    position: absolute;
-    width: 770px;
-    height: 400px;
-    background: #2f231d url("../img/browser-right.jpg");
-    right:0;
-    bottom: 0;
-    z-index: 2;
-}
-.center-idea{
-    position: absolute;
-    width: 770px;
-    height: 482px;
-    background: #231c1a url("../img/browser-center.jpg");
-    margin:auto;
-    left:0;
-    right:0;
-    bottom: 0;
-    z-index: 3;
+    background: url("../img/browser-center.jpg") bottom center no-repeat,
+                url("../img/browser-left.jpg") bottom left no-repeat,
+                url("../img/browser-right.jpg") bottom right no-repeat;
 }
 
 .theme-info{
