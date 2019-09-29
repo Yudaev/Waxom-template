@@ -754,3 +754,55 @@ input[type="text"]:focus {
     font-weight: 400;
     color: #c7b299;
 }
+
+.devices-block{
+    width: 1230px;
+    min-height: 695px;
+    margin: 0 auto;
+    background: url("../img/iphone-in-hand.jpg") bottom left no-repeat;
+    padding: 190px 100px 0 450px;
+    box-sizing: border-box;
+}
+
+.devices-block h2{
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    color: #555;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.devices-block p{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: #8c8c8c;
+    line-height: 1.75;
+    margin-bottom: 30px;
+}
+
+.devices-block ul{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: #8c8c8c;
+    line-height: 2;
+    list-style-type: none;
+    margin-left: 100px;
+}
+
+.devices-block ul li{
+    position: relative;
+}
+
+.devices-block ul li:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: 5px;
+    left: -50px;
+    background: url("../img/point.png") no-repeat;
+}
