@@ -1,5 +1,12 @@
 @font-face {
     font-family: 'Montserrat';
+    src: local('Montserrat UltraLight'), local('Montserrat-UltraLight'), url('../fonts/Montserrat-UltraLight.woff2') format('woff2'), url('../fonts/Montserrat-UltraLight.woff') format('woff'), url('../fonts/Montserrat-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
     src: local('Montserrat Light'), local('Montserrat-Light'), url('../fonts/montserratlight.woff2') format('woff2'), url('../fonts/montserratlight.woff') format('woff'), url('../fonts/montserratlight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
@@ -37,6 +44,13 @@
     font-family: 'Raleway';
     src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url('../fonts/ralewaysemibold.woff2') format('woff2'), url('../fonts/ralewaysemibold.woff') format('woff'), url('../fonts/ralewaysemibold.ttf') format('truetype');
     font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Regular'), local('Roboto-Regular'), url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -805,4 +819,176 @@ input[type="text"]:focus {
     top: 5px;
     left: -50px;
     background: url("../img/point.png") no-repeat;
+}
+
+.statistic{
+    width: 100%;
+    min-width: 1230px;
+    min-height: 300px;
+    background: linear-gradient(to right, #211b19, #4e3427);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.stat{
+    width: 170px;
+    margin: 0 15px;
+}
+
+.stat:after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.stat span{
+    display: block;
+}
+
+.stat svg{
+    fill: #c7b299;
+    margin-bottom: 15px;
+}
+
+.number{
+    color: #fff;
+    font-size: 48px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.number-name{
+    font-size: 14px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.posts{
+    width: 1230px;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.posts h2{
+    font-size: 30px;
+    font-family: "Raleway",sans-serif;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.posts p{
+    width: 800px;
+    margin: 0 auto 35px auto;
+    font-size: 16px;
+    font-family: "Montserrat",sans-serif;
+    color: #8c8c8c;
+    line-height: 1.75;
+    font-weight: 300;
+}
+
+.posts-block{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.post{
+    width: 370px;
+    min-height: 395px;
+    outline: 1px solid #f8f8f8;
+    outline-offset: -1px;
+    text-align: left;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.post h3{
+    font-size: 20px;
+    font-family: "Raleway",sans-serif;
+    color: #555;
+    font-weight: 500;
+    margin-top: 22px;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.post span{
+    font-size: 14px;
+    font-family: "Montserrat",sans-serif;
+    line-height: 1.6;
+    color: #8c8c8c;
+    font-weight: 300;
+    display: block;
+    margin: 13px 28px 0 28px;
+}
+
+.post a{
+    display: block;
+    text-decoration: none;
+    margin: 21px 28px 0 28px;
+    font-size: 14px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 300;
+    color: #c7b299;
+    position: relative;
+}
+
+.read-more:after{
+    content: "";
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-left: 5px solid #c7b299;
+    left: 85px;
+    top: 5px;
+}
+
+.calendar{
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    background-color: #363636;
+    top: 20px;
+    left: 20px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.cal-data{
+    height: 35px;
+    font-size: 24px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 300;
+}
+
+.cal-month{
+    height: 25px;
+    background-color: #252525;
+    font-size: 12px;
+    font-family: "Roboto",sans-serif;
+    line-height: 1.667;
+    font-weight: 400;
+}
+
+.cal-month,
+.cal-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-post{
+    position: absolute;
+    top: 0;
+    display: flex;
 }
