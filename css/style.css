@@ -875,6 +875,7 @@ input[type="text"]:focus {
     width: 1230px;
     text-align: center;
     padding-top: 75px;
+    margin:0 auto;
 }
 
 .posts h2{
