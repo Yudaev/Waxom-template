@@ -1454,13 +1454,28 @@ footer {
         border-bottom: 4px solid white;
     }
 
-    label:before {
+    label:before,
+    label:after {
         content: "";
         position: absolute;
         width: 34px;
         height: 4px;
         background: #fff;
-        top: 8px
+        top: 8px;
+        transition: transform 0.5s cubic-bezier(0.77,0.8,0.05,1.0);
+    }
+
+    input[type="checkbox"]:checked ~ label:before{
+        transform: rotate(-45deg);
+    }
+
+    input[type="checkbox"]:checked ~ label:after{
+        transform: rotate(45deg);
+    }
+
+    input[type="checkbox"]:checked ~ label {
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
     }
 
     .header-content-navigation ul {
