@@ -141,18 +141,18 @@ input[type="checkbox"]:checked ~ .slider {
 }
 
 .header-content-navigation ul li a:hover,
-.footer-bottom-content ul li a:hover,
-.footer-bottom-content ul li:first-child a:hover,
-.footer-bottom-content ul:last-child li a:hover,
+.footer-bottom ul li a:hover,
+.footer-bottom ul li:first-child a:hover,
+.footer-bottom ul:last-child li a:hover,
 .profession:hover h3,
 .theme-info-content h2 span{
     color: #c7b299;
 }
 
 .header-content-navigation ul li a:active,
-.footer-bottom-content ul li a:active,
-.footer-bottom-content ul li:first-child a:active,
-.footer-bottom-content ul:last-child li a:active {
+.footer-bottom ul li a:active,
+.footer-bottom ul li:first-child a:active,
+.footer-bottom ul:last-child li a:active {
     color: #d9cab8;
 }
 
@@ -1236,21 +1236,16 @@ footer {
     min-height: 110px;
     background: #111111;
     display: flex;
-    justify-content: center;
-}
-
-.footer-bottom-content {
-    width: 1230px;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.footer-bottom-content ul {
+.footer-bottom ul {
     list-style-type: none;
 }
 
-.footer-bottom-content ul li {
+.footer-bottom ul li {
     display: inline;
     padding-right: 12px;
     margin-right: 12px;
@@ -1261,13 +1256,13 @@ footer {
     font-weight: 300;
 }
 
-.footer-bottom-content ul li:last-child {
+.footer-bottom ul li:last-child {
     border: none;
     padding-right: 0;
     margin-right: 0;
 }
 
-.footer-bottom-content ul li a {
+.footer-bottom ul li a {
     color: #555;
     text-decoration: none;
     font-size: 13px;
@@ -1275,8 +1270,8 @@ footer {
     font-weight: 300;
 }
 
-.footer-bottom-content ul li:first-child a,
-.footer-bottom-content ul:last-child li a{
+.footer-bottom ul li:first-child a,
+.footer-bottom ul:last-child li a{
     color: #959595;
 }
 
@@ -1570,10 +1565,260 @@ footer {
     .statistic {
         flex-wrap: wrap;
         min-width: auto;
-        padding: 30px 0 0 0;
+        padding: 30px 0;
+        min-height: auto;
     }
     .stat {
         width: 20%;
-        margin-bottom: 30px;
+        margin: 0;
+    }
+
+    .posts {
+        width: 100%;
+        padding-top: 30px;
+        margin: 0 auto 100px auto;
+    }
+
+    .posts p {
+        width: 90%;
+    }
+
+    .footer-top {
+        min-width: auto;
+        min-height: auto;
+        padding: 50px 0;
+    }
+
+    .footer-top a {
+        text-align: center;
+    }
+
+    .footer-top a img {
+        width: 80%;
+    }
+
+    .footer-center,
+    .footer-bottom {
+        min-width: auto;
+        min-height: auto;
+    }
+
+    .footer-center-info,
+    .footer-center-posts {
+        width: 50%;
+        margin: 0;
+        padding: 30px 15px;
+    }
+
+    .footer-logo-block {
+        top: 20px;
+        margin: 0;
+    }
+
+    .footer-center-posts a:last-child {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-center-posts:nth-of-type(3) {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .footer-bottom {
+        padding: 35px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .head,
+    .theme-info {
+        min-width: auto;
+        min-height: auto;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .header-content-navigation {
+        padding: 20px 0;
+        min-width: auto;
+    }
+
+    input[type="checkbox"]:checked ~ .slider {
+        display: block;
+        visibility: hidden;
+    }
+
+    .header-content-navigation ul {
+        width: 100%;
+    }
+
+    .header-content-navigation ul li {
+        width: 100%;
+    }
+
+    .nav-buttons {
+        justify-content: space-between;
+    }
+
+    .ideas,
+    .theme-info-content {
+        min-width: auto;
+    }
+
+    .theme-info-content {
+        padding: 30px 0 90px 0;
+        text-align: center;
+    }
+
+    .theme-info-content button {
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 100%);
+    }
+
+    .projects-category-list {
+        flex-wrap: wrap;
+    }
+
+    .project-category,
+    .active-category {
+        margin-bottom: 10px;
+    }
+
+    .projects {
+        margin-top: 20px;
+    }
+
+    .video-controls p {
+        width: 80%;
+    }
+
+    .play,
+    .video-controls h2,
+    .video-controls p {
+        margin-bottom: 10px;
+    }
+
+    .devices-block {
+        padding: 20px 0;
+        width: 90%;
+        background-size: 140px;
+    }
+
+    .devices-block h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .devices-block p {
+        margin-bottom: 10px;
+    }
+
+    .devices-block ul {
+        margin-left: 190px;
+    }
+
+    .statistic {
+        padding: 20px 0;
+    }
+
+    .stat svg {
+        width: 40px;
+        margin-bottom: 0px;
+    }
+    .number {
+        font-size: 32px;
+    }
+
+    .stat span:nth-of-type(2) {
+        display: none;
+    }
+
+    .posts-block :nth-child(3)  {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .posts-block {
+        flex-wrap: wrap;
+    }
+
+    .post {
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+        padding: 20px 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+
+    body {
+        min-width: 400px;
+    }
+
+    input[type="text"]:focus {
+        width: 260px;
+    }
+
+    .theme-info-content {
+        padding: 20px 0;
+    }
+
+    .theme-info-content p {
+        margin-bottom: 10px;
+    }
+
+    .ideas-content p {
+        margin-bottom: 10px;
+    }
+
+    .ideas-img {
+        background-size: 300px;
+        min-height: 190px;
+    }
+
+    .theme-info-content h2,
+    .theme-info-content p {
+        width: 90%;
+        margin: 0 auto 10px auto;
+    }
+
+    .theme-info-content button {
+        position: relative;
+        transform: none;
+        left: auto;
+        right: auto;
+        top: auto;
+        margin: 0 auto 3px auto;
+    }
+
+    .theme-info-content button:active {
+        margin-bottom: 0;
+    }
+
+    .project {
+        width: 100%;
+        max-width: 370px;
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+    .video-block {
+        min-height: 370px;
+    }
+    .video-controls h2 {
+        width: 90%;
+    }
+
+    .footer-bottom ul li {
+        margin-right: 6px;
     }
 }
